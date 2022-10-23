@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int marks[100];
+
+    int n, i;
+    cout<<"Enter the number of students: ";
+     
+    cin>>n;
+
+
+    //input
+    for(i=0; i<n; i++)
+    {
+        cin>> marks[i];
+        marks[i] = marks[i]*5;
+
+    }
+
+    //output
+    cout<<"The data entered will be multiple of five"<<" ";
+    for(i=0; i<n; i++)
+    {
+        cout<< marks[i] <<",";
+    }
+
+    cout<<endl;
+
+
+
+    return 0;
+}
